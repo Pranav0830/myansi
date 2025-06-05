@@ -1,0 +1,11 @@
+- name: Deploy to Tomcat
+  hosts: web
+  become: yes
+  tasks:
+    - name: Copy WAR file to Tomcat
+      copy:
+        src: /Desktop/maven89/target/maven89
+        dest: /path/on/remote/tomcat/webapps/
+        remote_src: yes
+
+    
