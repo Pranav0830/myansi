@@ -4,7 +4,7 @@
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
-        src: /home/swami/Desktop/maven56/target/maven56.war
+        src: /var/snap/jenkins/4874/workspace/pss1/target/maven56.war
         dest: /opt/tomcat/webapps/
         remote_src: yes
 
